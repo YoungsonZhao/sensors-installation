@@ -1,6 +1,7 @@
 # Instructions for Sensors Installation
 The operation system is Ubuntu 16.04 and the ROS version is Kinetic.
 ## Kinect Xbox One
+### Based on SDK
 * Download libfreenect2 source
     ```
     git clone https://github.com/OpenKinect/libfreenect2.git
@@ -41,3 +42,4 @@ The operation system is Ubuntu 16.04 and the ROS version is Kinetic.
     ```
     ./bin/Protonect
     ```
+### Based on ROS
