@@ -9,6 +9,7 @@ The operation system is Ubuntu 16.04 and the ROS version is Kinetic.
 * Install build tools
     ```
     sudo apt-get install build-essential cmake pkg-config
+    ```
 * Install libusb. The version must be >= 1.0.20.
     ```
     sudo apt-get install libusb-1.0-0-dev
