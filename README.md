@@ -39,28 +39,27 @@ The operation system is Ubuntu 16.04 and the ROS version is Kinetic.
     sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
     ```
 * Replug the Kinect and Run the test program
-    ```
-    ./bin/Protonect
-    ```
+  ```
+  ./bin/Protonect
+  ```
 ### Based on ROS
 * Download iai-kinect2 source
-    ```
-    git clone https://github.com/code-iai/iai_kinect2.git  
-    cd iai_kinect2
-    ```
+  ```
+  git clone https://github.com/code-iai/iai_kinect2.git  
+  cd iai_kinect2
+  ```
 * Build
-    ```
-    rosdep install -r --from-paths .  
-    cd ~/catkin_ws
-    catkin_make -DCMAKE_BUILD_TYPE="Release"
-    ```
+  ```
+  rosdep install -r --from-paths .
+  cd ~/catkin_ws
+  catkin_make -DCMAKE_BUILD_TYPE="Release"
 * Source
-    ```
-    sudo gvim ~/.bashrc
+  ```
+  sudo gvim ~/.bashrc
   add the follow line
-    source ~/catkin_ws/devel/setup.zsh
+  source ~/catkin_ws/devel/setup.zsh
 * Test
-    ```
-    roslaunch kinect2_bridge kinect2_bridge.launch
-    rosrun kinect2_viewer kinect2_viewer
+  ```
+  roslaunch kinect2_bridge kinect2_bridge.launch
+  rosrun kinect2_viewer kinect2_viewer
     
