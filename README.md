@@ -43,6 +43,11 @@ The operation system is Ubuntu 16.04 and the ROS version is Kinetic.
     ```
     ./bin/Protonect
     ```
+* Set up FindGLFW3.cmake and freenect2_DIR for CMake based third-party applications
+    ```
+    export freenect2_DIR=$HOME/freenect2/lib/cmake/freenect2:$freenect2_DIR
+    sudo cp ../cmake_modules/FindGLFW3.cmake /usr/share/cmake-3.5/Modules
+    ```
 ### Based on ROS
 * Download iai-kinect2 source
     ```
