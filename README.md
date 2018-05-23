@@ -48,6 +48,12 @@ The operation system is Ubuntu 16.04 and the ROS version is Kinetic.
     export freenect2_DIR=$HOME/freenect2/lib/cmake/freenect2:$freenect2_DIR
     sudo cp ../cmake_modules/FindGLFW3.cmake /usr/share/cmake-3.5/Modules
     ```
+* Set up YouCompleteMe
+```
+    gvim ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
+    '-I/home/ys/freenect2/include'
+
+```
 ### Based on ROS
 * Download iai-kinect2 source
     ```
